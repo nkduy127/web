@@ -11,6 +11,10 @@ coverHeight: 9
 
 ## 1. Giới thiệu về Lenovo Legion 5
 
+![alt text](../../../images/anh6.jpg)
+![alt text](../../../images/GPU.jpg)
+![alt text](../../../images/Memory.jpg)
+
 1. CPU (Bộ xử lý trung tâm)
    Tên CPU: AMD Ryzen 5 4600H with Radeon Graphics
 
