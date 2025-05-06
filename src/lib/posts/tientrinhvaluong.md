@@ -2,14 +2,14 @@
 title: 'Tiến trình và luồng'
 date: '2025-04-29'
 categories:
-  - 'Nguyễn Khánh DuyDuy'
+  - 'Nguyễn Khánh Duy'
   - '22010361'
 coverImage: '/images/anh4.jpg'
 coverWidth: 16
 coverHeight: 9
 ---
 
-## 1. Giới thiệu về Lenovo Legion 55
+## 1. Giới thiệu về Lenovo Legion 5
 
 1. CPU (Bộ xử lý trung tâm)
    Tên CPU: AMD Ryzen 5 4600H with Radeon Graphics
@@ -47,7 +47,10 @@ Nhiệt độ: 45°C
 Nhận xét:
 → Đây là GPU tầm trung. Rất tốt cho học tập, dựng video nhẹ, chơi game phổ thông và xử lý song song (có thể dùng CUDA cho học máy ở mức entry-level).
 
----
+Tổng kết hiệu năng máy:
+Máy bạn có cấu hình khá ổn để học CNTT, lập trình, sử dụng phần mềm phát triển, máy ảo nhẹ và các tác vụ kỹ thuật thông thường.
+
+Nếu bạn định học sâu về AI/học máy hoặc làm đồ họa nặng (3D, dựng phim), nên cân nhắc nâng RAM lên 16GB và dùng GPU mạnh hơn.
 
 ## 2. Liệt kê ít nhất 12 bài toán trong CNTT dùng đa luồng / đa tiến trình
 
