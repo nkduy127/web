@@ -1,5 +1,5 @@
 ---
-title: 'Truyền ThôngThông'
+title: 'Truyền Thông'
 date: '2025-04-29'
 categories:
   - 'Nguyễn Khánh Duy'
@@ -32,13 +32,78 @@ RabbitMQ là một message broker được sử dụng rộng rãi trong các h�
 
 ### 4. Hướng dẫn cài đặt RabbitMQ (Docker):
 
+## ✅ Yêu cầu trước khi bắt đầu
+
+- Cài đặt sẵn **Docker** (Windows, macOS hoặc Linux).
+- Kiểm tra Docker đã hoạt động:
 ```bash
-docker run -d --hostname rabbit --name rabbitmq \
-  -p 5672:5672 -p 15672:15672 \
+docker --version
+```
+
+---
+
+## 🔧 Bước 1: Chạy RabbitMQ với Docker
+
+Sử dụng lệnh sau để tải và khởi động container RabbitMQ:
+
+```bash
+docker run -d \
+  --name rabbitmq \
+  --hostname rabbitmq-host \
+  -p 5672:5672 \
+  -p 15672:15672 \
   rabbitmq:3-management
 ```
 
-Sau khi chạy, giao diện quản lý truy cập tại: `http://localhost:15672` (user/pass: guest/guest).
+### 📌 Giải thích các tham số:
+- `--name rabbitmq`: Đặt tên cho container.
+- `--hostname rabbitmq-host`: Đặt hostname trong mạng nội bộ của Docker.
+- `-p 5672:5672`: Mở cổng AMQP (ứng dụng sẽ dùng cổng này để kết nối).
+- `-p 15672:15672`: Mở cổng giao diện quản trị Web.
+- `rabbitmq:3-management`: Image có sẵn plugin quản trị qua trình duyệt.
+
+---
+
+## 🌐 Bước 2: Truy cập Giao diện Quản lý RabbitMQ
+
+- Trình duyệt truy cập: [http://localhost:15672](http://localhost:15672)
+- Đăng nhập với:
+  - **Username:** `guest`
+  - **Password:** `guest`
+
+> ⚠️ Lưu ý: Người dùng `guest` chỉ có thể đăng nhập từ localhost. Nếu chạy trên server từ xa, cần tạo user mới.
+
+---
+
+## 🔍 Bước 3: Kiểm tra container
+
+- Kiểm tra container đang chạy:
+```bash
+docker ps
+```
+
+- Xem logs container RabbitMQ:
+```bash
+docker logs -f rabbitmq
+```
+
+---
+
+## 🧹 Bước 4: Dừng hoặc xóa container khi cần
+
+- Dừng container:
+```bash
+docker stop rabbitmq
+```
+
+- Xóa container:
+```bash
+docker rm rabbitmq
+```
+
+---
+
+
 
 ---
 
